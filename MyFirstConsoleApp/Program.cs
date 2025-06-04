@@ -17,6 +17,17 @@ void OperatorExamples()
     int area = width * height;
     Console.WriteLine(area);
 
+    while (area < 50)
+    {
+        height++;
+        area = width * height;
+    }
+    do
+    {
+        width--;
+        area = width * height;
+    } while (area > 25);
+
     // the next two statements declare starting variables
     string result = "The area";
     result = result + " is " + area;
